@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SASS Project(1)</title>
+
+  <!-- simple-lightbox CSS -->
+  <link rel="stylesheet" href="../css/simple-lightbox.min.css">
+
+  <!-- font-awesome CSS -->
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+
+  <!-- My CSS -->
+  <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+
+  <div id="wrap">
+    <!-- header Area Start -->
+    <div id="header">
+      <div class="container">
+        <!-- Logo -->
+        <h1><a href="#intro">Phono</a></h1>
+        <!-- Gnb -->
+        <div class="gnb">
+          <ul>
+            <li><a href="#intro">Intro</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#product">Product</a></li>
+          </ul>
+        </div>
+      </div>
+    </div><!-- header Area End -->
+
+
+    <!-- intro Area Start -->
+    <div id="intro">
+      <div class="container">
+        <!-- text-box -->
+        <div class="text-box">
+          <h2>The<br>headphones of<br>the future.</h2>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi nostrum odit ex harum eveniet quisquam dolorem doloremque placeat corporis repellat quibusdam, nulla, sequi pariatur, quas eos vitae facere tempore atque!</p>
+          <a href="#">Lead More</a>
+        </div>
+        <!-- img-box -->
+        <div class="img-box">
+          <img src="../images/intro-img.jpg" alt="인트로 이미지">
+        </div>
+      </div>
+    </div><!-- intro Area End -->
+
+
+    <!-- about Area Start -->
+    <div id="about">
+      <div class="container">
+        <div class="deco-text">Loud & Clear</div>
+        <h2>People Aren't Hearing<br> All the Music</h2>
+        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione iure ipsa neque omnis possimus, perspiciatis repellendus veritatis exercitationem, delectus velit illum unde voluptatem facere atque mollitia blanditiis quia. Quas, culpa!</P>
+      </div>
+    </div><!-- about Area End -->
+
+
+    <!-- product Area Start -->
+    <div id="product">
+      <div class="container-fluid gallery">
+
+        <div>
+          <a href="../images/product-img1.jpg">
+            <img src="../images/product-img1.jpg" alt="Product1">
+          </a>
+        </div>
+        
+        <div>
+          <a href="../images/product-img2.jpg">
+            <img src="../images/product-img2.jpg" alt="Product2">
+          </a>
+          <a href="../images/product-img3.jpg">
+            <img src="../images/product-img3.jpg" alt="Product3">
+          </a>
+          <a href="../images/product-img4.jpg">
+            <img src="../images/product-img4.jpg" alt="Product4">
+          </a>
+        </div>
+
+        <div>
+          <a href="../images/product-img5.jpg">
+            <img src="../images/product-img5.jpg" alt="Product5">
+          </a>
+          <a href="../images/product-img6.jpg">
+            <img src="../images/product-img6.jpg" alt="Product6">
+          </a>
+        </div>
+
+      </div>
+    </div><!-- product Area End -->
+
+
+    <!-- footer Area Start -->
+    <div id="footer">
+      <div class="container">
+        <!-- SNS Group -->
+        <div>
+          <h3>Lorem ipsum<br> dolor sit.</h3>
+          <div class="sns-group">
+            <a href="#"><i class='fa fa-twitter-square' aria-hidden='true'></i></a>
+            <a href="#"><i class='fa fa-facebook-square' aria-hidden='true'></i></a>
+            <a href="#"><i class='fa fa-youtube-play' aria-hidden='true'></i></a>
+          </div>
+        </div>
+
+        <!-- Company Info -->
+        <div>
+          <h3>Company Info</h3>
+          <ul>
+            <li><a href="#">All Products</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+
+        <!-- Blog Post -->
+        <div>
+          <h3>Blog Post</h3>
+          <ul>
+            <li><a href="#">Lorem list item1</a></li>
+            <li><a href="#">Lorem list item2</a></li>
+            <li><a href="#">Lorem list item3</a></li>
+            <li><a href="#">Lorem list item4</a></li>
+          </ul>
+        </div>
+
+        <!-- Subscribe -->
+        <div>
+          <h3>Subscribe</h3>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <form action="">
+            <div class="email-from">
+              <span>
+                <input type="email" name="email" id="input_email" placeholder="E-Mail">
+              </span>
+              <a href="#">
+                <i class='fa fa-arrow-right' aria-hidden='true'></i>
+              </a>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div><!-- footer Area End -->
+
+
+  </div>
+  
+
+ 
+  <!-- jQuery Insert -->
+  <script src='http://code.jquery.com/jquery-1.9.1.min.js'></script>
+
+  <!-- simple-lightbox JS -->
+  <script src="../js/simple-lightbox.jquery.min.js"></script>
+
+  <!-- Sticky JS -->
+  <script src="../js/sticky1.js"></script>
+   
+  <script>
+    $(function(){
+     
+      // simpleLightbox JS
+     var lightbox = $('.gallery a').simpleLightbox();
+
+
+     
+    });
+  </script>
+
+</body>
+</html>
